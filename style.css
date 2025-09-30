@@ -103,11 +103,6 @@ body {
     transition: all 0.5s ease;
 }
 
-.profile-img:hover {
-    transform: translateY(-20px);
-}
-
-
 .my h1 {
     font-size: 3.8rem;
     margin-bottom: 1.5rem;
@@ -137,7 +132,7 @@ body {
 }
 
 .cta-button:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 0 10px var(--accent-glow);
     background-color: brown;
     
