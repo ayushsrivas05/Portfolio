@@ -140,7 +140,7 @@ body {
 
 /* Skills Section */
 .skills {
-    padding: 3rem 0 5rem 5rem;
+    padding: 3rem 0 5rem 4rem;
     background: var(--darker-bg);
 }
 
@@ -172,6 +172,48 @@ body {
     font-size: 2.5rem;
     color: var(--accent);
     margin-bottom: 1rem;
+}
+
+/* project section */
+.project {
+    padding: 2rem 0 5rem 4rem;
+    background: var(--darker-bg);
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-cards {
+    width: 350px;
+    height: 200px;
+    padding: 0.3rem 2rem 2rem 2rem;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    transition: all 0.5s ease;
+    backdrop-filter: blur(5px);
+}
+.spotify-img img{
+    margin-top: 0.5rem;
+    height: 140px;
+    width: 290px;
+    border-radius: 0.5rem;
+} 
+.simon-img img{
+    margin-top: 0.5rem;
+    height: 140px;
+    width: 290px;
+    border-radius: 0.5rem;
+} 
+
+.project-cards:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px var(--accent-glow);
 }
 
 /* footer section */
@@ -220,6 +262,23 @@ footer {
     .logo {
         font-size: 1.5rem;
         padding-left: 2rem;
+    }
+
+   .skills-grid {
+        display: grid;
+        grid-template-columns: auto;
+   }
+   .skills {
+        padding: 1rem 2rem 1rem 1rem;
+   }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .social-links {
+        margin-top: 1rem;
     }
 }
 
