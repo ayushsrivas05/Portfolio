@@ -79,11 +79,10 @@ body {
     display: flex;
     align-items: center;
     padding: 9% 5% 5% 5%;
-    background: radial-gradient(circle at 70% 40%, var(--accent-glow) 0%, transparent 30%);
 }
 
 .my-content {
-    flex: 1;
+    /* flex: 1; */
     padding-right: 5rem;
 }
 
@@ -94,19 +93,16 @@ body {
 }
 
 .profile-img {
-    width: 380px;
-    height: 380px;
-    border: 3px solid var(--accent);
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 30px var(--accent-glow);
-    transition: all 0.5s ease;
 }
 
 .my h1 {
     font-size: 3.8rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
+    background: linear-gradient(15deg, var(--accent) 30%, #ffffff 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -190,27 +186,25 @@ body {
 .project-cards {
     width: 350px;
     height: 200px;
-    padding: 0.3rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 15px;
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255, 255, 255, 0.01);
     transition: all 0.5s ease;
     backdrop-filter: blur(5px);
 }
-.spotify-img img{
-    margin-top: 0.5rem;
-    height: 140px;
-    width: 290px;
-    border-radius: 0.5rem;
-} 
-.simon-img img{
-    margin-top: 0.5rem;
-    height: 140px;
-    width: 290px;
-    border-radius: 0.5rem;
-} 
+
+.project-cards p {
+    margin-top: 1rem;
+}
+
+.project-grid a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .project-cards:hover {
+    cursor: pointer;
     transform: translateY(-10px);
     border-color: var(--accent);
     box-shadow: 0 10px 30px var(--accent-glow);
@@ -279,6 +273,17 @@ footer {
 
     .social-links {
         margin-top: 1rem;
+    }
+    .links {
+        margin-left: -10rem;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .project {
+        padding: 1rem 2rem 1rem 1rem;
     }
 }
 
